@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link href="~/css/main.css" rel="stylesheet" type="text/css" media="screen, projection">
+
+@section Scripts {
+    <script src="~/js/index.js"></script>
+}
+
+<link rel="stylesheet" href="~/css/chat.css" />
+
+<div id="chatDialog" style="border: 1px solid" class="disconnected">
+    Hello @User.Identity.Name
+    <input type="hidden" id="CurrentUserName" value="@User.Identity.Name" />
+    <div id="chatConnectionInfo">
+        <strong>Connecting...</strong>
+    </div>
+    <div id="chatMainPanel">
+        <ul id="chatHistory"></ul>
+        <div id="bottomPanel">
+            <form id="chatForm">
+                <input id="messageTextbox" type="text" placeholder="Type a message" />
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>

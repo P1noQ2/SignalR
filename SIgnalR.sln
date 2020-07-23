@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIgnalR", "SIgnalR\SIgnalR.csproj", "{A9E26E7A-C1F5-4845-A948-CC702B7BE211}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{2F365144-D9B8-4AA1-BB5A-D92A1540401E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9E26E7A-C1F5-4845-A948-CC702B7BE211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9E26E7A-C1F5-4845-A948-CC702B7BE211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9E26E7A-C1F5-4845-A948-CC702B7BE211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9E26E7A-C1F5-4845-A948-CC702B7BE211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F365144-D9B8-4AA1-BB5A-D92A1540401E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F365144-D9B8-4AA1-BB5A-D92A1540401E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F365144-D9B8-4AA1-BB5A-D92A1540401E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F365144-D9B8-4AA1-BB5A-D92A1540401E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E43B32B3-CAB3-4339-B61C-211E9EC69D7E}
+	EndGlobalSection
+EndGlobal
