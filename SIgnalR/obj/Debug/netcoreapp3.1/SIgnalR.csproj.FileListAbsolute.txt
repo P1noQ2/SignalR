@@ -359,11 +359,6 @@ C:\Users\YousefPC\Desktop\SignalR\SIgnalR\obj\Debug\netcoreapp3.1\Razor\Areas\Id
 C:\Users\YousefPC\Desktop\SignalR\SIgnalR\obj\Debug\netcoreapp3.1\Razor\Views\Chat\Index.cshtml.g.cs
 C:\Users\YousefPC\Desktop\SignalR\SIgnalR\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\YousefPC\Desktop\SignalR\SIgnalR\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\YousefPC\Desktop\SignalR\SIgnalR\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Create.cshtml.g.cs
-C:\Users\YousefPC\Desktop\SignalR\SIgnalR\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Delete.cshtml.g.cs
-C:\Users\YousefPC\Desktop\SignalR\SIgnalR\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Details.cshtml.g.cs
-C:\Users\YousefPC\Desktop\SignalR\SIgnalR\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Edit.cshtml.g.cs
-C:\Users\YousefPC\Desktop\SignalR\SIgnalR\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Index.cshtml.g.cs
 C:\Users\YousefPC\Desktop\SignalR\SIgnalR\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\YousefPC\Desktop\SignalR\SIgnalR\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\YousefPC\Desktop\SignalR\SIgnalR\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs

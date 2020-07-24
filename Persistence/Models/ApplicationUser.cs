@@ -9,6 +9,11 @@ namespace Persistence.Models
     // Add profile data for application users by adding properties to the ApplicationUser class
     public class ApplicationUser : IdentityUser
     {
+        public ApplicationUser()
+        {
+            Messages = new HashSet<Message>();
+        }
         public bool ChatStatus { get; set; }
+        public virtual ICollection<Message> Messages { get; set; }
     }
 }

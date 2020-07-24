@@ -10,7 +10,7 @@ using Persistence.Context;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(SignalRContext))]
-    [Migration("20200723181247_Initial Migration")]
+    [Migration("20200724213530_Initial Migration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -231,7 +231,7 @@ namespace Persistence.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("FromUserId")
+                    b.Property<string>("FromUser")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -247,7 +247,12 @@ namespace Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("MessageId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Message");
                 });
@@ -301,6 +306,13 @@ namespace Persistence.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Persistence.Models.Message", b =>
+                {
+                    b.HasOne("Persistence.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany("Messages")
+                        .HasForeignKey("UserId");
                 });
 #pragma warning restore 612, 618
         }

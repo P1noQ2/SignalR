@@ -12,6 +12,11 @@ using Microsoft.EntityFrameworkCore;
 using Persistence.Context;
 using SIgnalR.Hubs;
 using SIgnalR.Services;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.CodeAnalysis.Options;
+using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 namespace SIgnalR
 {
@@ -31,6 +36,8 @@ namespace SIgnalR
 
             services.AddDbContext<SignalRContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("SignalRContext")));
+
+            services.AddMvc();
 
             services.AddRazorPages();
             services.AddSignalR(o =>
@@ -58,8 +65,8 @@ namespace SIgnalR
 
             app.UseRouting();
 
-            app.UseAuthorization();
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

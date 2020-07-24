@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SIgnalR.Controllers
 {
-    [Authorize]
     public class ChatController : Controller
     {
+        [Authorize]
         public IActionResult Index()
         {
             return View();

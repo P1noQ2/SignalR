@@ -11,7 +11,7 @@ namespace Persistence.Context
     public class SignalRContext : IdentityDbContext<ApplicationUser>
     {
         public SignalRContext(DbContextOptions options)
-            :base(options)
+            : base(options)
         {
 
         }
@@ -20,6 +20,11 @@ namespace Persistence.Context
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
+            builder.Entity<Message>()
+                .HasOne<ApplicationUser>(a => a.ApplicationUser)
+                .WithMany(d => d.Messages)
+                .HasForeignKey(d => d.UserId);
         }
     }
 }
