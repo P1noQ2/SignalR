@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Persistence.Interfaces
 {
@@ -8,6 +9,6 @@ namespace Persistence.Interfaces
     {
         IMessageRepository Messages { get; set; }
         IApplicationUserRepository ApplicationUsers { get; set; }
-        int complete();
+        Task<int> Complete();
     }
 }

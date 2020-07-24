@@ -7,3 +7,11 @@ C:\Users\Yousef\source\repos\SIgnalR\Persistence\obj\Debug\netcoreapp3.1\Persist
 C:\Users\Yousef\source\repos\SIgnalR\Persistence\obj\Debug\netcoreapp3.1\Persistence.csproj.CoreCompileInputs.cache
 C:\Users\Yousef\source\repos\SIgnalR\Persistence\obj\Debug\netcoreapp3.1\Persistence.dll
 C:\Users\Yousef\source\repos\SIgnalR\Persistence\obj\Debug\netcoreapp3.1\Persistence.pdb
+C:\Users\YousefPC\Desktop\SignalR\Persistence\bin\Debug\netcoreapp3.1\Persistence.deps.json
+C:\Users\YousefPC\Desktop\SignalR\Persistence\bin\Debug\netcoreapp3.1\Persistence.dll
+C:\Users\YousefPC\Desktop\SignalR\Persistence\bin\Debug\netcoreapp3.1\Persistence.pdb
+C:\Users\YousefPC\Desktop\SignalR\Persistence\obj\Debug\netcoreapp3.1\Persistence.AssemblyInfoInputs.cache
+C:\Users\YousefPC\Desktop\SignalR\Persistence\obj\Debug\netcoreapp3.1\Persistence.AssemblyInfo.cs
+C:\Users\YousefPC\Desktop\SignalR\Persistence\obj\Debug\netcoreapp3.1\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\YousefPC\Desktop\SignalR\Persistence\obj\Debug\netcoreapp3.1\Persistence.dll
+C:\Users\YousefPC\Desktop\SignalR\Persistence\obj\Debug\netcoreapp3.1\Persistence.pdb

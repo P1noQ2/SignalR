@@ -1,4 +1,5 @@
-﻿using Persistence.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using Persistence.Context;
 using Persistence.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -6,6 +7,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Net;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Persistence.Repositories
 {
@@ -16,14 +18,14 @@ namespace Persistence.Repositories
         {
             Context = context;
         }
-        public void Add(TEntity entity)
+        public async Task Add(TEntity entity)
         {
-            Context.Set<TEntity>().Add(entity);
+            await Context.Set<TEntity>().AddAsync(entity);
         }
 
-        public void AddRange(IEnumerable<TEntity> entities)
+        public async Task AddRange(IEnumerable<TEntity> entities)
         {
-            Context.Set<TEntity>().AddRange(entities);
+            await Context.Set<TEntity>().AddRangeAsync(entities);
         }
 
         public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
@@ -31,14 +33,14 @@ namespace Persistence.Repositories
             return Context.Set<TEntity>().Where(predicate);
         }
 
-        public TEntity Get(int id)
+        public async Task<TEntity> Get(int id)
         {
-            return Context.Set<TEntity>().Find(id);
+            return await Context.Set<TEntity>().FindAsync(id);
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public async Task<IEnumerable<TEntity>> GetAll()
         {
-            return Context.Set<TEntity>().ToList();
+            return await Context.Set<TEntity>().ToListAsync();
         }
 
         public void Remove(TEntity entity)

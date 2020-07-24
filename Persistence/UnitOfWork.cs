@@ -3,7 +3,9 @@ using Persistence.Interfaces;
 using Persistence.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Persistence
 {
@@ -19,14 +21,14 @@ namespace Persistence
         public IMessageRepository Messages { get; set; }
         public IApplicationUserRepository ApplicationUsers { get; set; }
 
-        public int complete()
+        public async Task<int> Complete()
         {
-            return Context.SaveChanges();
+            return await Context.SaveChangesAsync();
         }
 
-        public void Dispose()
+        public async void Dispose()
         {
-            Context.Dispose();
+            await Context.DisposeAsync();
         }
     }
 }

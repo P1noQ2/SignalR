@@ -8866,25 +8866,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yousef\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\YousefPC\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yousef\\source\\repos\\SIgnalR\\SIgnalR\\SIgnalR.csproj",
+      "projectUniqueName": "C:\\Users\\YousefPC\\Desktop\\SignalR\\SIgnalR\\SIgnalR.csproj",
       "projectName": "SIgnalR",
-      "projectPath": "C:\\Users\\Yousef\\source\\repos\\SIgnalR\\SIgnalR\\SIgnalR.csproj",
-      "packagesPath": "C:\\Users\\Yousef\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yousef\\source\\repos\\SIgnalR\\SIgnalR\\obj\\",
+      "projectPath": "C:\\Users\\YousefPC\\Desktop\\SignalR\\SIgnalR\\SIgnalR.csproj",
+      "packagesPath": "C:\\Users\\YousefPC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\YousefPC\\Desktop\\SignalR\\SIgnalR\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Yousef\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\YousefPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -8898,8 +8896,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Yousef\\source\\repos\\SIgnalR\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\Yousef\\source\\repos\\SIgnalR\\Persistence\\Persistence.csproj"
+            "C:\\Users\\YousefPC\\Desktop\\SignalR\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\YousefPC\\Desktop\\SignalR\\Persistence\\Persistence.csproj"
             }
           }
         }
