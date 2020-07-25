@@ -15,4 +15,3 @@ C:\Users\YousefPC\Desktop\SignalR\Persistence\obj\Debug\netcoreapp3.1\Persistenc
 C:\Users\YousefPC\Desktop\SignalR\Persistence\obj\Debug\netcoreapp3.1\Persistence.csproj.CoreCompileInputs.cache
 C:\Users\YousefPC\Desktop\SignalR\Persistence\obj\Debug\netcoreapp3.1\Persistence.dll
 C:\Users\YousefPC\Desktop\SignalR\Persistence\obj\Debug\netcoreapp3.1\Persistence.pdb
-C:\Users\YousefPC\Desktop\SignalR\Persistence\obj\Debug\netcoreapp3.1\Persistence.csprojAssemblyReference.cache

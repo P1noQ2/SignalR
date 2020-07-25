@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Persistence.Models.Message>
+
+<div id="chatDialog" style="border: 1px solid" class="disconnected">
+    Hello @User.Identity.Name
+    <div id="chatMainPanel">
+        <ul id="chatHistory">
+            @foreach (var item in Model)
+            {
+                <li>
+                    <div>
+                        <span class="name">
+                            @item.FromUser
+                        </span>
+                        <span class="time">
+                            @item.SendAt
+                        </span>
+                    </div>
+                    <div class="message">
+                        @item.Text
+                    </div>
+
+                </li>
+            }
+        </ul>
+        <div id="bottomPanel">
+            <form asp-action="Create"
+                  data-ajax-begin="clearInputField" data-ajax-complete=""
+                  data-ajax-failure="" data-ajax-success="sendMessage"
+                  data-ajax="true" data-ajax-method="POST">
+
+                <input id="messageText" type="text" name="Text" placeholder="Type a message" />
+                <input type="hidden" id="CurrentUserName" name="FromUser" value="@User.Identity.Name" />
+                <input type="hidden" name="To" value="sohar" />
+                <input type="hidden" name="UserId" value="" />
+                <input type="submit" value="Send" id="submitButton" />
+            </form>
+        </div>
+    </div>
+</div>

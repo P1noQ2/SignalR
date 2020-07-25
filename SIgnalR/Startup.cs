@@ -82,7 +82,6 @@ namespace SIgnalR
                 endpoints.MapRazorPages();
 
                 endpoints.MapHub<ChatHub>("/chatHub");
-                endpoints.MapHub<ChatHub>("/agentHub");
             });
         }
     }

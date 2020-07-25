@@ -77,7 +77,7 @@
 }
 
 #chatDialog.disconnected #chatMainPanel {
-    filter: blur(2px);
+/*    filter: blur(2px);*/
 }
 
 #chatDialog.disconnected #chatConnectionInfo {
