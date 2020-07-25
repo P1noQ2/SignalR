@@ -17,6 +17,7 @@ using Microsoft.CodeAnalysis.Options;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Persistence.Models;
 
 namespace SIgnalR
 {
@@ -45,6 +46,11 @@ namespace SIgnalR
                 o.EnableDetailedErrors = true;
             });
             services.AddSingleton<IChatRoomService, InMemoryChatRoomService>();
+
+            var builder = services.AddIdentityCore<ApplicationUser>();
+            var identityBuilder = new IdentityBuilder(builder.UserType, builder.Services);
+            identityBuilder.AddEntityFrameworkStores<SignalRContext>();
+            identityBuilder.AddSignInManager<SignInManager<ApplicationUser>>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

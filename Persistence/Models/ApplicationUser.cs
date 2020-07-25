@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
@@ -14,6 +15,9 @@ namespace Persistence.Models
             Messages = new HashSet<Message>();
         }
         public bool ChatStatus { get; set; }
+        
+        [NotMapped]
+        public string ConnectionId { get; set; }
         public virtual ICollection<Message> Messages { get; set; }
     }
 }
